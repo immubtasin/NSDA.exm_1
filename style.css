@@ -1,0 +1,115 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #20c997;
+    --dark-color: #212529;
+}
+
+.navbar {
+    padding: 15px 30px;
+    background: #ffffff !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+
+.navbar-brand {
+    font-weight: 600;
+    color: var(--secondary-color) !important;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar-brand:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link {
+    color: var(--dark-color) !important;
+    margin-right: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--secondary-color);
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+
+.nav-link.active {
+    color: var(--secondary-color) !important;
+}
+
+
+.btn-outline-success {
+    border-radius: 25px;
+    padding: 8px 20px;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-outline-success:hover {
+    background: var(--secondary-color);
+    color: #fff;
+    border-color: var(--secondary-color);
+}
+
+@media (max-width: 991px) {
+    .nav-link {
+        margin: 10px 0;
+    }
+
+    .btn-outline-success {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+banner img {
+    width: 25%;
+    height: 25%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+banner {
+  display: flex;
+}
+
+banner .id {
+  width: 50%;
+}
